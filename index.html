@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[OM] Acesso rápido</title>
+    <link rel="icon" href="https://www.habbo.com.br/habbo-imaging/badge/b09134s43114s41194f74f3131b8a5c9311558ee0f561db7e0.gif">
+    <link rel="stylesheet" href="css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            height: 100vh;
+            font-size: 14px;
+        }
+
+        body {
+            background-color: #282828;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .container {
+            
+            max-width: 550px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .degrade {
+            background: linear-gradient(to right, #203d34, #2b8c6d);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #5e5e55;
+            font-weight: 200;
+        }
+
+        section.botoes-link {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        a.link button {
+    width: 100%; 
+    max-width: 800px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #fff;
+    transition: .2s;
+}
+
+        a.link i {
+            font-size: 1.5em;
+        }
+
+        a.link button:hover,
+        footer a.btn-footer:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            margin: 30px;
+        }
+
+        footer a.btn-footer {
+            width: 60px;
+            height: 60px;
+            display: inline-block;
+            font-size: 2em;
+            line-height: 60px;
+            border-radius: 50px;
+            margin: 0 10px;
+            transition: .2s;
+        }
+
+        @keyframes piscar {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            animation: piscar 2.5s infinite;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+           
+            <h1>Ordem Militar</h1>
+            <p>Acesso rápido dos avaliadores da Ordem Militar</p>
+        </header>
+
+        <section class="botoes-link">
+            <a href="https://docs.google.com/forms/d/18PgEnSO4_92XbHFBThdxeEYESA1SA5FVYH75PYBHEUU/edit" target="_blank" class="link">
+                <button class="degrade">
+                    <span>Poste sua avaliação</span>
+                    <i class="bi bi-file-earmark-fill"></i>
+                </button>
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1rjnAxp1O1nvKeDyQGKOUgjLk1Y-T1c7exWF9fO11qUw/edit?resourcekey=&gid=1437917674#gid=1437917674" target="_blank" class="link">
+                <button class="degrade">
+                    <span>Confira sua postagem</span>
+                    <i class="bi bi-eye-fill"></i>
+                </button>
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfl0vMg_QPd0D9oQDrdy3PsqW-jlnjRgATOJGnzKaDg8RBNIA/viewform" target="_blank" class="link">
+                <button class="degrade">
+                    <span>Poste sua retificação</span>
+                    <i class="bi bi-clipboard2-x-fill"></i>
+                </button>
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1M-6BPkhLanWfwbPe4b-sRANWj8-KlRYkk8sNzfgMWX8/edit?gid=609814577#gid=609814577" target="_blank" class="link">
+                <button class="degrade">
+                    <span>Confira sua retificação</span>
+                    <i class="bi bi-eye-slash-fill"></i>
+                </button>
+            </a>
+            <a href="https://drive.google.com/drive/u/5/folders/1V0HjZwKZbFBdEAmlmNheR7n2Af3hDYRd" target="_blank" class="link">
+                <button class="degrade">
+                    <span>Acesse o backup</span>
+                    <i class="bi bi-send-fill"></i>
+                </button>
+            </a>
+        </section>
+
+        <footer>
+            <a href="#" class="btn-footer degrade" target="_blank"><i class="bi bi-code-slash"></i></a>
+        </footer>
+    </div>
+</body>
+</html>
